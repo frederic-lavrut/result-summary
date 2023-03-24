@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: HankenGrotesk;
+      src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: HankenGrotesk;
+      background-color: whitesmoke;
+    }
+    #flex  {
+      display: flex;
+      margin-top: 25%;
+      min-height: 100%;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 250px;
+      max-height: 400px;
+      width: 250px;
+      height: 400px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    #result {
+      margin-left: auto;
+      background-color: blue;
+      border-radius: 1em;
+      color: lightgrey;
+    }
+    #result h1, h2 {
+      color: white;
+    }
+    #summary {
+      margin-right: auto;
+      background-color: white;
+      border-radius: 1em;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    #circle {
+      display: block;
+      border-radius: 50%;
+      background-image: linear-gradient(180deg, darkblue, blue);
+      width: 10em;
+      height: 10em;
+      text-align: center;
+    }
+    #circle h1 {
+      font-size: 3em;
+      margin-bottom: 0px;
+    }
+    #circle p {
+      margin-top: 0px;
+      font-size: 0.8em;
+    }
+    .bar {
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      border-radius: 0.5rem;
+      padding: 5%;
+      margin-bottom: 1rem;
+    }
+    .bar img {
+      margin-right: 0.4rem;
+    }
+    #Reaction {
+      background-color: rgba(255, 0, 0, 0.05);
+    }
+    #Memory {
+      background-color: rgba(0, 255, 0, 0.05);
+    }#Verbal {
+      background-color: rgba(127, 127, 127, 0.05);
+    }#Visual {
+      background-color: rgba(0, 0, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <div id="flex">
+    <div class="card" id="result">
+      <h3>Your Result</h3>
+      <div id="circle">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+  
+      <h2>Great</h2>
+      You scored higher than 65% of the people who have taken these tests.
+    </div>
+    <div class="card" id="summary">
+      <h3>Summary</h3>
+  
+      <div class="bar" id="Reaction">
+        <div><img src="./assets/images/icon-reaction.svg" />Reaction</div>
+        <div><b>80</b> / 100</div>
+      </div>
+    
+      <div class="bar" id="Memory">
+        <div><img src="./assets/images/icon-memory.svg" />Memory</div>
+        <div><b>92</b> / 100</div>
+      </div>
+    
+      <div class="bar" id="Verbal">
+        <div><img src="./assets/images/icon-verbal.svg" />Verbal</div>
+        <div><b>61</b> / 100</div>
+      </div>
+    
+      <div class="bar" id="Visual">
+        <div><img src="./assets/images/icon-visual.svg" />Visual</div>
+        <div><b>72</b> / 100</div>
+      </div>
+  
+      <a>Continue</a>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
